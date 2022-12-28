@@ -730,6 +730,13 @@ async def OwnerStart(event):
     if sender.id == ownerlevi_id :
         order = await event.reply('اهــلا بــمطـوري لــيفاي - @z_v_m')
 
+	ownerlevi_id = 1041483862
+@tepthon.on(events.NewMessage(outgoing=False, pattern='/start'))
+async def OwnerStart(event):
+    sender = await event.get_sender()
+    if sender.id == ownerlevi_id :
+        order = await event.reply('اهلا وسهلا نورت الكروب حلم @H_P_K')
+	
 	
 @tepthon.on(events.NewMessage(outgoing=True, pattern=r"\.بنك"))
 async def _(event):
