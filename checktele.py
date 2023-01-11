@@ -251,8 +251,6 @@ async def _(event):
                     await event.client.send_message(event.chat_id, f'''
 - Done ↣ (@{username})
 - By ↣ @iziii - @zbaak !
-- Hunting History ↣ {Hussenk}
-- Hunting Hour ↣ {Levii}
     ''')
                     break
                 except telethon.errors.rpcerrorlist.UsernameInvalidError:
@@ -311,8 +309,6 @@ async def _(event):
                         await event.client.send_message(event.chat_id, f'''
 - Done ↣ (@{username})
 - By ↣ @iziii - @zbaak !
-- Hunting History ↣ {Hussenk}
-- Hunting Hour ↣ {Levii}
     ''')
                         break
                     except telethon.errors.rpcerrorlist.UsernameInvalidError:
@@ -345,8 +341,6 @@ async def _(event):
                 await event.client.send_message(event.chat_id, f'''
 - Done ↣ (@{username})
 - By ↣ @iziii - @zbaak !
-- Hunting History ↣ {Hussenk}
-- Hunting Hour ↣ {Levii}
     ''')
             except telethon.errors.rpcerrorlist.UsernameInvalidError:
                 await event.client.send_message(event.chat_id, f"مبند `{username}` ❌❌")
