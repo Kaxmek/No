@@ -138,7 +138,7 @@ async def _(event):
 
     
 ownerhson_id = 1041483862
-@fifthon.on(events.NewMessage(outgoing=False, pattern='/start'))
+@fifthon.on(events.NewMessage(outgoing=False, pattern='.المطور'))
 async def OwnerStart(event):
     sender = await event.get_sender()
     if sender.id == ownerhson_id :
