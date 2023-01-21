@@ -1,15 +1,15 @@
 {
-    "name": "Tepthon",
+    "name": "Mikthon",
     "description": " اهلا بكم في تنصيب سورس صيد اليوزرات !",
-    "logo" : "https://telegra.ph/file/09a6b0d947cfb8423a2d1.jpg",
+    "logo" : "https://graph.org/file/dead0e9a6bc000eff2b2d.jpg",
     "stack": "container",
-    "repository": "https://github.com/perdark/per-sed",
+    "repository": "https://github.com/Mikthon/FQ_YQ",
     "keywords": [
         "python",
         "chatbot",
         "telegrambot"
     ],
-    "website": "https://github.com/SS7SS/Tepthon",
+    "website": "https://github.com/Mikthon/FQ_YQ",
     "env": {
         "APP_ID": {
             "description": "ايبي ايدي",
