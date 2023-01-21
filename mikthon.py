@@ -142,7 +142,7 @@ ownerhson_id = 1041483862
 async def OwnerStart(event):
     sender = await event.get_sender()
     if sender.id == ownerhson_id :
-        order = await event.reply'اهلا مطوري محممد @FQ_YQ')
+        order = await event.reply('اهلا مطوري محمد @FQ_TQ')
 
 
 @fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.اعادة تشغيل"))
