@@ -192,25 +192,25 @@ def gen_user(choice):
             pass
     return username
 
-@fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.تشيكر"))
+@mikthon.on(events.NewMessage(outgoing=True, pattern=r"\.تشيكر"))
 async def _(event):
     if ispay2[0] == "yes":
         await event.edit(tele_checker)
         
-@fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.اليوزرات المبندة"))
+@mikthon.on(events.NewMessage(outgoing=True, pattern=r"\.اليوزرات المبندة"))
 async def _(event):
     if ispay2[0] == "yes":
         await fifthon.send_file(event.chat_id, 'banned.txt')
 
 
-@fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.الانواع"))
+@mikthon.on(events.NewMessage(outgoing=True, pattern=r"\.الانواع"))
 async def _(event):
     if ispay2[0] == "yes":
         await event.edit(tele_checker2)
 # صيد عدد نوع قناة
 
 
-@fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.صيد (.*)"))
+@mikthon.on(events.NewMessage(outgoing=True, pattern=r"\.صيد (.*)"))
 async def _(event):
     if ispay2[0] == "yes":
         isclaim.clear()
@@ -221,7 +221,7 @@ async def _(event):
         trys = 0
         await event.edit(f"حسناً سأفحص نوع `{choice}` من اليوزرات على `{ch}` , بعدد `{msg[0]}` من المحاولات !")
 
-        @fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.حالة الصيد"))
+        @mikthon.on(events.NewMessage(outgoing=True, pattern=r"\.حالة الصيد"))
         async def _(event):
             if ispay2[0] == "yes":
                 if "on" in isclaim:
@@ -251,13 +251,13 @@ async def _(event):
                     await event.client.send_message(event.chat_id, f'''
 ●━━━━━━━━●
 ┏━━━━━┓
-- By ↣ @iziii 
+- By ↣ @mikthon
 ┗━━━━━┛
 ┏━━━━━┓
 ↣ (@{username})
 ┗━━━━━┛
 ┏━━━━━┓
-- By ↣@ZBaak 
+- By ↣@FQ_YQ
 ┗━━━━━┛
 ●━━━━━━━━●
 
@@ -267,7 +267,7 @@ async def _(event):
                     with open("banned.txt", "a") as f:
                         f.write(f"\n{username}")
                 except Exception as eee:
-                    await fifthon.send_message(event.chat_id, f'''خطأ مع {username}
+                    await mikthon.send_message(event.chat_id, f'''خطأ مع {username}
     الخطأ :
     {str(eee)}''')
                     if "A wait of" in str(eee):
@@ -283,7 +283,7 @@ async def _(event):
         trys = ""
         await event.client.send_message(event.chat_id, "! انتهى الصيد")
         
-@fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.تثبيت (.*)"))
+@mikthon.on(events.NewMessage(outgoing=True, pattern=r"\.تثبيت (.*)"))
 async def _(event):
     if ispay2[0] == "yes":
         trys = 0
@@ -296,7 +296,7 @@ async def _(event):
             ch = str(msg[1])
             await event.edit(f"حسناً سأحاول تثبيت `{username}` على `{ch}` , بعدد `{msg[0]}` من المحاولات !")
 
-            @fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.حالة التثبيت التلقائي"))
+            @mikthon.on(events.NewMessage(outgoing=True, pattern=r"\.حالة التثبيت التلقائي"))
             async def _(event):
                 if "on" in isauto:
                     msg = await event.edit(f"التثبيت وصل لـ({trys}) من المحاولات")
@@ -319,13 +319,13 @@ async def _(event):
                         await event.client.send_message(event.chat_id, f'''
 ●━━━━━━━━●
 ┏━━━━━┓
-- By ↣ @iziii 
+- By ↣ @mikthon
 ┗━━━━━┛
 ┏━━━━━┓
 ↣ (@{username})
 ┗━━━━━┛
 ┏━━━━━┓
-- By ↣@ZBaak 
+- By ↣@FQ_YQ
 ┗━━━━━┛
 ●━━━━━━━━●
 
@@ -336,7 +336,7 @@ async def _(event):
                         break
                     except Exception as eee:
 
-                        await fifthon.send_message(event.chat_id, f'''خطأ مع {username}
+                        await mikthon.send_message(event.chat_id, f'''خطأ مع {username}
     الخطأ :
     {str(eee)}''')
                         if "A wait of" in str(eee):
@@ -361,13 +361,13 @@ async def _(event):
                 await event.client.send_message(event.chat_id, f'''
 ●━━━━━━━━●
 ┏━━━━━┓
-- By ↣ @iziii 
+- By ↣ @mikthon
 ┗━━━━━┛
 ┏━━━━━┓
 ↣ (@{username})
 ┗━━━━━┛
 ┏━━━━━┓
-- By ↣@ZBaak 
+- By ↣@FQ_YQ
 ┗━━━━━┛
 ●━━━━━━━━●
 
