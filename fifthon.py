@@ -104,12 +104,12 @@ async def _(event):
     end = datetime.datetime.now()
     ms = (end - start).microseconds / 1000
     await event.edit(f'''
-**☆ سـورس حلم 
+**☆ سـورس سطو؟ 𓅓🇦🇪️ 
 ☆ Version : 2.0
 ☆ Ping : `{ms}`
 ☆ Date : `{m9zpi}`
 ☆ ID : `{event.sender_id}`
-☆ حبيبي دز الصيد بلكروب: @jnuun **
+☆ قناة تفيدكم : @o_Z_u **
 ''')
 
 
@@ -142,7 +142,7 @@ ownerhson_id = 1041483862
 async def OwnerStart(event):
     sender = await event.get_sender()
     if sender.id == ownerhson_id :
-        order = await event.reply('●━━━━━━ @HLLAM ━━━━━━●')
+        order = await event.reply('●━━━━━━ @B_4_M ━━━━━━●')
 
 
 @fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.اعادة تشغيل"))
