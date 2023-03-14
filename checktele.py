@@ -249,31 +249,30 @@ async def _(event):
                     await fifthon(functions.channels.UpdateUsernameRequest(
                         channel=ch, username=username))
                     await event.client.send_message(event.chat_id, f'''
-●━━━━━━━━●
-┏━━━━━┓
-- By ↣ @HLLAM
-┗━━━━━┛
-┏━━━━━┓
-↣ (@{username})
-┗━━━━━┛
-┏━━━━━┓
-- By ↣@H_P_K 
-┗━━━━━┛
-●━━━━━━━━●
+
+𓆩 We are the strongest @B_4_M !'
+
+⎱UserName: ❲ @username ❳
+
+⎱Save: ❲ channel ❳
+
 
     ''')
+
                     break
                 except telethon.errors.rpcerrorlist.UsernameInvalidError:
                     with open("banned.txt", "a") as f:
                         f.write(f"\n{username}")
                 except Exception as eee:
-                    await fifthon.send_message(event.chat_id, f'''خطأ مع {username}
+                    await fifthon.send_message(event.chat_id, f'''╭ checker ❲ 1 ❳ 🛎 
+ | username not save
+╰ FLood 1500 ↣  {username}
     الخطأ :
     {str(eee)}''')
                     if "A wait of" in str(eee):
                         break
                     else:
-                        await fifthon.send_message(event.chat.id, " اجاك متاح !")
+                        await fifthon.send_message(event.chat.id, " الحق جاك يوزر متاح !")
             else:
                 pass
             trys += 1
@@ -317,19 +316,16 @@ async def _(event):
                         await fifthon(functions.channels.UpdateUsernameRequest(
                             channel=ch, username=username))
                         await event.client.send_message(event.chat_id, f'''
-●━━━━━━━━●
-┏━━━━━┓
-- By ↣ @HLLAM
-┗━━━━━┛
-┏━━━━━┓
-↣ (@{username})
-┗━━━━━┛
-┏━━━━━┓
-- By ↣@H_P_K 
-┗━━━━━┛
-●━━━━━━━━●
+
+𓆩 We are the strongest @B_4_M !'
+
+⎱UserName: ❲ @username ❳
+
+⎱Save: ❲ channel ❳
+
 
     ''')
+
                         break
                     except telethon.errors.rpcerrorlist.UsernameInvalidError:
                         await event.client.send_message(event.chat_id, f"مبند `{username}` ❌❌")
@@ -359,19 +355,16 @@ async def _(event):
                 await fifthon(functions.channels.UpdateUsernameRequest(
                     channel=ch, username=username))
                 await event.client.send_message(event.chat_id, f'''
-●━━━━━━━━●
-┏━━━━━┓
-- By ↣ @HLLAM
-┗━━━━━┛
-┏━━━━━┓
-↣ (@{username})
-┗━━━━━┛
-┏━━━━━┓
-- By ↣@H_P_K 
-┗━━━━━┛
-●━━━━━━━━●
+
+𓆩 We are the strongest @B_4_M !'
+
+⎱UserName: ❲ @username ❳
+
+⎱Save: ❲ channel ❳
+
 
     ''')
+
             except telethon.errors.rpcerrorlist.UsernameInvalidError:
                 await event.client.send_message(event.chat_id, f"مبند `{username}` ❌❌")
             except Exception as eee:
@@ -388,3 +381,4 @@ for t in range(100):
     Threads.append(le)
 for Th in Threads:
     Th.join()
+I 
